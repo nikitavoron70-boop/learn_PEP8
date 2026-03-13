@@ -1,11 +1,11 @@
 class Animal:
 
-    def __init__(self, name: str, age: int, weight: float) -> None:
+    def __init__(self, name: str, age: int, weight) -> None:
         self.name = name
         self.age = age
         self.weight = weight
 
-    def eat(self, food: float) -> float:
+    def eat(self, food):
         self.weight += food
         return self.weight
 
@@ -15,7 +15,7 @@ class Animal:
 
 class Cat(Animal):
 
-    def __init__(self, name: str, age: int, weight: float, breed: str) -> None:
+    def __init__(self, name: str, age: int, weight, breed: str) -> None:
         super().__init__(name, age, weight)
         self.breed = breed
 
