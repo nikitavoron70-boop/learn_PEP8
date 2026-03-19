@@ -1,8 +1,7 @@
 import math
-from typing import Union
 
-
-def calculate_even_powers_sum(x: Union[int, float], y: Union[int, float]) -> float:
+def calculate_even_powers_sum(x, y):
+    
     MAX_POWER = 8
 
     result = sum(
@@ -10,4 +9,4 @@ def calculate_even_powers_sum(x: Union[int, float], y: Union[int, float]) -> flo
         for power in range(0, MAX_POWER + 1, 2)
     )
 
-    return float(result + y)
+    return result + y
