@@ -1,5 +1,6 @@
 import math
 
+
 def calculate_even_powers_sum(x, y):
     
     MAX_POWER = 8
